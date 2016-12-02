@@ -1,11 +1,14 @@
 /***
- * Represents a playing card.  Subclasses are expected to determine whether they
- * beat other cards, in addition to the best way to display themselves.
+ * Represents a playing card.  Common properties such as the rank and
+ * value are defined here.  However, subclasses are responsible for
+ * implementing the two abstract methods and thereby establishing
+ * the behavior of their specific suit, i.e., whether they beat a
+ * comparison card and how best to display themselves as a string.
  */
 public abstract class PlayingCard {
 	
-	private final String rank; // no one can change the rank, once set
-	private final int value; // no one can change the value, once set
+	private final String rank; // cannot change the rank, once assigned
+	private final int value; // cannot change the value, once assigned
 
 	public PlayingCard(int value, String rank) {
 		this.rank = rank;
@@ -20,10 +23,21 @@ public abstract class PlayingCard {
 		return rank;
 	}
 	
-	// all subclasses MUST implement this or be declared abstract
+	/**
+	 * Compares the current card with a second card to see whether
+	 * this card counts as higher, based on value and/or suit.
+	 * 
+	 * @param other a second PlayingCard against which to compare
+	 * @return whether this card beats the other card
+	 */
 	public abstract boolean beats(PlayingCard other);
-	
 	// all subclasses MUST implement this or be declared abstract
+	
+	/**
+	 * Returns a printable representation of this card including its
+	 * value and suit.
+	 */
 	public abstract String toString();
+	// all subclasses MUST implement this or be declared abstract
 
 }
