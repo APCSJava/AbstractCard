@@ -14,7 +14,7 @@ public class Spade extends PlayingCard {
 	 * @param rank the face value shown on the card
 	 */
 	public Spade(String rank, int value) {
-		// TODO call the superclass constructor
+		// TODO call the super class constructor
 	}
 
 	/**
