@@ -3,13 +3,13 @@
  */
 public class Tester {
 
-	private static final int[] values = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 	private static final String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+	private static final int[] values = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
 	public static void main(String[] args) {
 		PlayingCard [] deck = new PlayingCard[52];
 		for (int i = 0; i<13; i++) {
-			deck[i] = new Spade(values[i], ranks[i]);
+			deck[i] = new Spade(ranks[i], values[i]);
 		}
 		// TODO initialize other suits in the deck here
 		
@@ -27,7 +27,7 @@ public class Tester {
 		// TODO call the shuffle() method of the Dealer class with your deck
 		
 		// TODO call the printDeck() method again and verify the new ordering of cards
-		Dealer.printDeck(deck);
+		
 	}
 
 }

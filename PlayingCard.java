@@ -10,7 +10,7 @@ public abstract class PlayingCard {
 	private final String rank; // cannot change the rank, once assigned
 	private final int value; // cannot change the value, once assigned
 
-	public PlayingCard(int value, String rank) {
+	public PlayingCard(String rank, int value) {
 		this.rank = rank;
 		this.value = value;
 	}

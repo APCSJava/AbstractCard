@@ -11,10 +11,10 @@ public class Spade extends PlayingCard {
 	 * the superclass constructor.
 	 * 
 	 * @param value the card's relative value, based on its rank
-	 * @param rank the number or face value shown on the card
+	 * @param rank the face value shown on the card
 	 */
-	public Spade(int value, String rank) {
-		super(value, rank);
+	public Spade(String rank, int value) {
+		// TODO call the superclass constructor
 	}
 
 	/**
