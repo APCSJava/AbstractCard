@@ -7,8 +7,8 @@ public class Spade extends PlayingCard {
 
 	/**
 	 * Since this class does not define any new fields, simply
-	 * use the constructor arguments provided in the call to
-	 * the superclass constructor.
+	 * use the constructor arguments provided in this call as
+	 * arguments for the superclass constructor.
 	 * 
 	 * @param value the card's relative value, based on its rank
 	 * @param rank the face value shown on the card
@@ -29,7 +29,8 @@ public class Spade extends PlayingCard {
 	}
 
 	/**
-	 * Get our rank and append an "S" to indicate our suit
+	 * Get the rank and append an "S" to indicate suit.  For 
+	 * example, the four should print as 4S, the Queen as QS, etc.
 	 */
 	public String toString() {
 		// TODO implement this method

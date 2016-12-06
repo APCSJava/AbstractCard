@@ -38,7 +38,7 @@ public class Dealer {
 	}
 	
 	/**
-	 * Prints to standard output the cards, in order
+	 * Prints to standard output a list of cards by order of index
 	 * @param deck
 	 */
 	public static void printDeck(PlayingCard[] deck) {

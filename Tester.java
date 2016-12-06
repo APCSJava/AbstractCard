@@ -3,6 +3,9 @@
  */
 public class Tester {
 
+	// An example of "parallel arrays"
+	// ranks[0] is related to values[0]
+	// ranks[1] is related to values[1], etc.
 	private static final String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 	private static final int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 

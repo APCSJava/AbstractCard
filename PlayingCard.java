@@ -31,13 +31,13 @@ public abstract class PlayingCard {
 	 * @return whether this card beats the other card
 	 */
 	public abstract boolean beats(PlayingCard other);
-	// all subclasses MUST implement this or be declared abstract
+	// subclasses MUST implement this or declare themselves abstract
 	
 	/**
 	 * Returns a printable representation of this card indicating 
 	 * its rank and suit.
 	 */
 	public abstract String toString();
-	// all subclasses MUST implement this or be declared abstract
+	// subclasses MUST implement this or declare themselves abstract
 
 }
